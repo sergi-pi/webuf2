@@ -61,4 +61,6 @@ $(document).ready(function () {
             "background-color": "#242424"
         });
     }
+        msnry.reloadItems()
+
 });
