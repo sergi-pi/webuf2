@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu_bar {
+    display: none;
+}
+
+section#banner {
+    width: 100%;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    transition: background-color .5s;
+    z-index: 2000;
+}
+
+nav {
+    display: table;
+    margin: auto;
+    margin-top: 15px;
+    height: 40px;
+    transition: margin-left .5s;
+}
+
+nav ul {
+    display: block;
+    float: left;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    margin: 10px;
+    padding: 2px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+img#logo {
+    float: left;
+    cursor: pointer;
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 100px 30px 0 30px;
+    transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+
+main {
+    margin-top: -60px;
+    : root max-width: 100%;
+}
+
+.test {
+    height: 900px;
+    max-height: 900px;
+    background-color: rebeccapurple;
+    width: 100%;
+}
+
+.bx-viewport {
+    height: 100vh !important;
+}
+
+:root .slider-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.test2 {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    padding-top: 70px;
+}
+
+.contenidor-fl {
+    width: 100%;
+    background: #242424;
+    z-index: 5;
+    padding-top: 0px;
+}
+
+.element {
+    background: #242424;
+    width: 25%;
+    padding: 10px;
+}
+
+.element p {
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;
+    display: none;
+}
+
+.element img {
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px #000;
+}
+
+.kfContainer {
+    max-width: 100vw;
+    height: 90vh;
+    background-color: #242424;
+    position: relative;
+    margin-top: -2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.carretera {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    min-height: 707px;
+    background-image: url(../img/carretera.png);
+    background-repeat: repeat-x;
+}
+
+.imatgeKF1 {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation-name: esquerra;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.imatgeKF1 img {
+    display: block;
+    padding: 5px;
+    position: absolute;
+    top: -5%;
+    right: -40%;
+}
+
+.imatgeKF2 {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation-name: dreta;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.imatgeKF2 img {
+    display: block;
+    position: absolute;
+    top: 53%;
+    left: -40%;
+}
+
+@keyframes dreta {
+    0% {
+        left: -40%x;
+        animation-timing-function: ease;
+    }
+    20% {
+        left: 0%;
+        animation-timing-function: linear;
+    }
+    40% {
+        left: 40%;
+        animation-timing-function: linear;
+    }
+    60% {
+        left: 80%;
+        animation-timing-function: linear;
+    }
+    80% {
+        left: 110%;
+        animation-timing-function: linear;
+    }
+    100% {
+        left: 140%;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes esquerra {
+    0% {
+        right: -40%x;
+        animation-timing-function: ease;
+    }
+    20% {
+        right: 0%;
+        animation-timing-function: linear;
+    }
+    40% {
+        right: 40%;
+        animation-timing-function: linear;
+    }
+    60% {
+        right: 80%;
+        animation-timing-function: linear;
+    }
+    80% {
+        right: 110%;
+        animation-timing-function: linear;
+    }
+    100% {
+        right: 140%;
+        animation-timing-function: linear;
+    }
+}
+
+.contenidorFlips {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+.flips{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #242424;
+    overflow-x: hidden;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+}
+
+.footer h1 {
+    margin: 0 auto;
+    color: white;
+    font-size: 100px;
+}
+
+@media (max-width: 817px) {}
+
+@media (max-width: 817px) {}
+
+@media (max-width: 700px) {
+    .element {
+        width: 50%;
+        background: #242424;
+    }
+}
+
+@media (max-width: 480px) {
+    .element {
+        width: 100%;
+        background: #242424;
+    }
+}

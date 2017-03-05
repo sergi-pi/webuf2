@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sergi Pi</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/backgroundVideo.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/corners.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu_bar"> <a href="#" class="bt-menu"><span class="icon-menu"></span></a> </div>
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>Inici</li>
+                </a>
+                <a href="#">
+                    <li>Videos</li>
+                </a>
+                <a href="#">
+                    <li>Imatges</li>
+                </a>
+            </ul> <img id="logo" src="img/09.png">
+            <ul>
+                <a href="#">
+                    <li>Sergi</li>
+                </a>
+                <a href="#">
+                    <li>Contace</li>
+                </a>
+                <a href="#">
+                    <li>FAQ</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <ul class="bxslider">
+        <li>
+            <div class="slider-item" style="background-image: url(img/sl1.jpg);"></div>
+        </li>
+        <li>
+            <div class="slider-item" style="background-image: url(img/sl2.jpg);"></div>
+        </li>
+        <li>
+            <div class="slider-item" style="background-image: url(img/sl3.jpg);"></div>
+        </li>
+        <li>
+            <div class="slider-item" style="background-image: url(img/sl4.jpg);"></div>
+        </li>
+        <li>
+            <div class="slider-item" style="background-image: url(img/sl5.jpg);"></div>
+        </li>
+    </ul>
+    <main>
+        <video class="bv-video"></video>
+    </main>
+    <div class="contenidor-fl">
+        <div class="element"> <img class="msnr-img" src="img/fl1.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl2.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl3.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl4.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl5.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl6.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl7.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl8.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl9.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl10.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl11.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl12.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl13.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl14.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl15.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl16.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl17.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl18.jpg" alt=""> </div>
+        <div class="element"> <img class="msnr-img" src="img/fl19.jpg" alt=""> </div>
+    </div>
+    <script>
+        var elem = document.querySelector('.contenidor-fl');
+        var msnry = new Masonry(elem, {
+            itemSelector: '.element'
+        });
+    </script>
+    <div class="kfContainer">
+        <div class="carretera">
+            <div class="imatgeKF1">  <img src="img/kf6.png" alt=""> </div>
+            <div class="imatgeKF2"> <img src="img/kf5.png" alt=""> </div>
+        </div>
+    </div>
+    <div class="contenidorFlips">
+        <div class="flips">A</div>
+        <div class="flips">B</div>
+        <div class="flips">C</div>
+        <div class="flips">D</div>
+    </div>
+    <div class="footer">
+        <h1>FOOTER PEPI</h1></div>
+</body>
+
+</html>
