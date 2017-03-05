@@ -86,9 +86,11 @@
         <div class="element"> <img class="msnr-img" src="img/fl19.jpg" alt=""> </div>
     </div>
     <script>
-        var elem = document.querySelector('.contenidor-fl');
-        var msnry = new Masonry(elem, {
-            itemSelector: '.element'
+        $(document).ready(function () {
+            var elem = document.querySelector('.contenidor-fl');
+            var msnry = new Masonry('.contenidor-fl', function () {
+                itemSelector: elem
+            });
         });
     </script>
     <div class="kfContainer">
