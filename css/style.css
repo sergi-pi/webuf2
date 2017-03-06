@@ -119,7 +119,7 @@ main {
 
 .kfContainer {
     max-width: 100vw;
-    height: 90vh;
+    height: 80vh;
     background-color: #242424;
     position: relative;
     margin-top: -2px;
@@ -229,19 +229,91 @@ main {
     }
 }
 
-.contenidorFlips {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    position: relative;
-    white-space: nowrap;
+.flex-container {
+    background-color: #242424;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-.flips{
-    width: 250px;
-    height: 250px;
-    display: inline-block;
-    vertical-align: middle;
+.flex-item {
+    background: #242424;
+    padding: 5px;
+    width: 500px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 150px;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.panel {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    perspective: 2200px;
+}
+
+
+.panel .front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+
+.panel .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.panel.flip .front {
+    z-index: 900;
+    transform: rotateY(180deg);
+}
+
+.panel.flip .back {
+    z-index: 1000;
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.box1 {
+    background-color: #14bcc8;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.box2 {
+    background-color: #ff7e70;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
 }
 
 .footer {
@@ -249,6 +321,7 @@ main {
     height: 300px;
     background-color: #242424;
     overflow-x: hidden;
+    border: 1px solid white;
     text-align: center;
     position: relative;
     justify-content: center;

@@ -7,6 +7,17 @@ $(document).ready(function () {
         , pager: true
         , touchEnabled: true
     });
+    
+    $('.hover').hover(function () {
+        $(this).addClass('flip');
+    }, function () {
+        $(this).removeClass('flip');
+    });
+    
+    var elem = document.querySelector('.contenidor-fl');
+    var msnry = new Masonry('.contenidor-fl', function () {
+        itemSelector: elem
+    });
     const backgroundVideo = new BackgroundVideo('.bv-video', {
         src: [
           'video/video.mp4'
@@ -61,6 +72,4 @@ $(document).ready(function () {
             "background-color": "#242424"
         });
     }
-        msnry.reloadItems()
-
 });
