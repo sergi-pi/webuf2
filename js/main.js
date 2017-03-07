@@ -13,11 +13,13 @@ $(document).ready(function () {
     }, function () {
         $(this).removeClass('flip');
     });
-    
-    var elem = document.querySelector('.contenidor-fl');
-    var msnry = new Masonry('.contenidor-fl', function () {
-        itemSelector: elem
+    $('#container').imagesLoaded(function () {
+        var elem = document.querySelector('.contenidor-fl');
+        var msnry = new Masonry('.contenidor-fl', function () {
+            itemSelector: elem
+        });
     });
+    
     const backgroundVideo = new BackgroundVideo('.bv-video', {
         src: [
           'video/video.mp4'
