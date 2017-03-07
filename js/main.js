@@ -13,7 +13,7 @@ $(document).ready(function () {
     }, function () {
         $(this).removeClass('flip');
     });
-    $('#container').imagesLoaded(function () {
+    $('.contenidor-fl').imagesLoaded(function () {
         var elem = document.querySelector('.contenidor-fl');
         var msnry = new Masonry('.contenidor-fl', function () {
             itemSelector: elem
